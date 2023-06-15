@@ -1,0 +1,12 @@
+#SPDX-FileCopyrightText: 2023 Birger Schacht
+#SPDX-License-Identifier: MIT
+name: Run Linter
+
+on: push
+
+jobs:
+  black:
+    uses: acdh-oeaw/prosnet-workflows/.github/workflows/poetry-checks.yml@birger/poetry-workflow
+    with:
+      src: "./apis_core"
+      black-options: "--check --diff"
