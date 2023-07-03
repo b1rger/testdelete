@@ -1,0 +1,9 @@
+#SPDX-FileCopyrightText: 2023 Birger Schacht
+#SPDX-License-Identifier: MIT
+name: Run Linter
+
+on: push
+
+jobs:
+  gitlint:
+    uses: acdh-oeaw/prosnet-workflows/.github/workflows/gitlint.yml@birger/gitlint
